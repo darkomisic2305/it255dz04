@@ -1,0 +1,148 @@
+// Color variables (appears count calculates by raw css)
+@color0: #207cca; // Appears 3 times
+@color1: #fafafa; // Appears 2 times
+
+// Width variables (appears count calculates by raw css)
+@width0: 25px; // Appears 2 times
+@width1: 100%; // Appears 10 times
+@width2: 24%; // Appears 2 times
+
+// Height variables (appears count calculates by raw css)
+@height0: 180px; // Appears 2 times
+@height1: 500px; // Appears 2 times
+@height2: 200px; // Appears 2 times
+@height3: 25px; // Appears 2 times
+@height4: 50px; // Appears 6 times
+
+body {
+	font-family: helvetica;
+	margin: 0;
+	padding: 0;
+	width: @width1;
+}
+html {
+	font-family: helvetica;
+	margin: 0;
+	padding: 0;
+	width: @width1;
+}
+.header {
+	background-color: black;
+	color: white;
+	max-height: @height4;
+	max-width: @width1;
+	min-height: @height4;
+	min-width: @width1;
+}
+.big-picture {
+	background-image: url('http://www.blirk.net/wallpapers/1280x800/maldives-wallpaper-16.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	max-height: @height1;
+	max-width: @width1;
+	min-height: @height1;
+	min-width: @width1;
+}
+.main {
+	background-color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 20px;
+	text-align: justify;
+}
+.footer {
+	background: black;
+	color: white;
+	max-height: @height4;
+	max-width: @width1;
+	min-height: @height4;
+	min-width: @width1;
+}
+.footer>a {
+	float: left;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.footer>div {
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+.language-icons {
+	display: inline;
+	float: left;
+	height: @height4;
+	margin-left: 50px;
+	width: 25%;
+	div {
+		border-radius: 100%;
+		display: inline-block;
+		margin-right: 5px;
+		margin-top: 12.5px;
+		max-height: @height3;
+		max-width: @width0;
+		min-height: @height3;
+		min-width: @width0;
+	}
+	.btn-1 {
+		background-size: 25px 25px;
+		background: url('https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png');
+	}
+	.btn-2 {
+		background-size: 25px 25px;
+		background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Flag_of_Romania.svg/2000px-Flag_of_Romania.svg.png');
+	}
+	.btn-3 {
+		background-size: 25px 25px;
+		background: url('http://www.uq.edu.au/uqabroad/images/russia/flag-russia.gif');
+	}
+	.btn-4 {
+		background-size: 25px 25px;
+		background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Flag_of_Serbia.svg/2000px-Flag_of_Serbia.svg.png');
+	}
+}
+.header-right {
+	float: right;
+}
+.tabs {
+	display: inline;
+	height: @height4;
+}
+.search-bar {
+	border: 0px solid #dbdbdb;
+	margin-top: 5px;
+	padding: 8px 15px;
+}
+.button {
+	background-color:@color0;
+	border:2px solid @color0;
+	color:@color1;
+	left:-8px;
+	padding:6px 15px;
+	position: relative;
+}
+.search-button {
+	&:hover {
+		background-color:@color1;
+		color:@color0;
+	}
+}
+.small-pictures {
+	background-color: #EDE9E0;
+	max-height: @height2;
+	max-width: @width1;
+	min-height: @height2;
+	min-width: @width1;
+}
+.small-pic {
+	display: inline;
+	img {
+		border-radius: 15%;
+		margin-top: 10px;
+		max-height: @height0;
+		max-width: @width2;
+		min-height: @height0;
+		min-width: @width2;
+		padding-left: 0.5%;
+	}
+}
